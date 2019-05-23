@@ -14,6 +14,10 @@ spec:
       labels:
         jmeter_mode: master
     spec:
+      hostAliases:
+      - ip: "<NodeIP>"
+        hostnames:
+        - "jpetstore.example.com"
       containers:
       - name: jmmaster
         image: kubernautslabs/jmeter_master:latest
