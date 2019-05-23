@@ -6,7 +6,8 @@ metadata:
     app: jmeter-grafana
 spec:
   ports:
-    - port: 3000
+    - nodePort: 31100
+      port: 3000
       targetPort: 3000
   selector:
     app: jmeter-grafana
